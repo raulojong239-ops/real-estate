@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details | Modern Family Residence | HavenHomes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="real.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">H</span>
+                Haven<span>Homes</span>
+            </a>
+
+            <input type="checkbox" id="menuToggle" class="menu-checkbox" hidden>
+            <label for="menuToggle" class="menu-toggle" aria-label="Open navigation">☰</label>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html" class="active">Properties</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-link">Login</a>
+                <a href="sell.html" class="btn btn-primary">List Property</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Modern Family Residence</h1>
+            <p>📍 Bonanjo, Douala, Cameroon &nbsp;|&nbsp; Ref: HH-2026-001</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="properties.html">Properties</a> / <span>Modern Family Residence</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILS CONTENT -->
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="details-grid">
+
+                <!-- Left Column: Media & Overview -->
+                <div>
+                    <!-- Main Gallery Image -->
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200" alt="Modern Family Residence" class="details-main-img" id="mainPhoto">
+
+                    <!-- Thumbnail Strip -->
+                    <div class="details-gallery">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900" alt="Exterior" onclick="document.getElementById('mainPhoto').src=this.src;">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900" alt="Living Room" onclick="document.getElementById('mainPhoto').src=this.src;">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=900" alt="Kitchen" onclick="document.getElementById('mainPhoto').src=this.src;">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900" alt="Backyard Lounge" onclick="document.getElementById('mainPhoto').src=this.src;">
+                    </div>
+
+                    <!-- Specs Bar -->
+                    <div class="specs-bar">
+                        <div class="specs-item">
+                            <strong>4 Beds</strong>
+                            <span>Bedrooms</span>
+                        </div>
+                        <div class="specs-item">
+                            <strong>3 Baths</strong>
+                            <span>Bathrooms</span>
+                        </div>
+                        <div class="specs-item">
+                            <strong>250 m²</strong>
+                            <span>Living Area</span>
+                        </div>
+                        <div class="specs-item">
+                            <strong>2 Cars</strong>
+                            <span>Covered Garage</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <h2 style="font-size: 22px; margin-bottom: 12px; color: var(--dark);">About This Property</h2>
+                    <p style="color: var(--text); font-size: 15px; line-height: 1.7; margin-bottom: 25px;">
+                        An architectural masterpiece located in prime Bonanjo, Douala. This home features floor-to-ceiling glass walls, abundant natural light, a gourmet chef kitchen with imported marble countertops, and a private landscaped backyard with a heated swimming pool and covered lounge terrace.
+                    </p>
+                    <p style="color: var(--text); font-size: 15px; line-height: 1.7; margin-bottom: 30px;">
+                        The master suite includes a private balcony overlooking the garden, a walk-in dressing room, and an ensuite bath with freestanding soaking tub and rainfall shower. Positioned within minutes of premier international schools, diplomatic consulates, and business centers.
+                    </p>
+
+                    <!-- Key Amenities -->
+                    <h2 style="font-size: 22px; margin-bottom: 12px; color: var(--dark);">Key Amenities & Features</h2>
+                    <div class="features-tags">
+                        <span class="feature-tag">🏊 Heated Swimming Pool</span>
+                        <span class="feature-tag">🌳 Private Landscaped Garden</span>
+                        <span class="feature-tag">⚡ 24/7 Backup Generator</span>
+                        <span class="feature-tag">📹 CCTV & Security Guard House</span>
+                        <span class="feature-tag">❄️ Central Air Conditioning</span>
+                        <span class="feature-tag">🍳 Designer Chef Kitchen</span>
+                        <span class="feature-tag">🚗 2-Car Automated Garage</span>
+                        <span class="feature-tag">📶 High-Speed Fiber Optic Ready</span>
+                    </div>
+
+                    <!-- Property Details Table -->
+                    <h2 style="font-size: 22px; margin: 30px 0 15px; color: var(--dark);">Property Specifications</h2>
+                    <div style="background: var(--light); border-radius: 8px; padding: 20px; font-size: 14px; line-height: 2;">
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding: 6px 0;">
+                            <strong>Property ID:</strong> <span>HH-2026-001</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding: 6px 0;">
+                            <strong>Property Type:</strong> <span>Single Family Luxury House</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding: 6px 0;">
+                            <strong>Status:</strong> <span style="color: var(--primary); font-weight: 700;">For Sale</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding: 6px 0;">
+                            <strong>Land Title:</strong> <span>Titre Foncier Validé (Clean & Vetted)</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding: 6px 0;">
+                            <strong>Year Built:</strong> <span>2022</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 6px 0;">
+                            <strong>City / Region:</strong> <span>Douala, Littoral Region</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Pricing & Agent Contact -->
+                <div>
+                    <!-- Pricing Card -->
+                    <div class="sidebar-card">
+                        <span class="property-status" style="display: inline-block; margin-bottom: 10px;">For Sale</span>
+                        <h2 style="font-size: 32px; color: var(--primary); margin-bottom: 5px;">$250,000</h2>
+                        <p style="font-size: 13px; color: var(--text); margin-bottom: 20px;">Estimated ~150,000,000 CFA (Notary fees separate)</p>
+
+                        <a href="contact.html?property=Modern+Family+Residence" class="btn btn-primary" style="display: block; text-align: center; margin-bottom: 10px;">
+                            Schedule a Private Viewing
+                        </a>
+                        <a href="contact.html?subject=Make+an+Offer" class="btn btn-outline" style="display: block; text-align: center; border-color: var(--dark); color: var(--dark);">
+                            Make an Offer
+                        </a>
+                    </div>
+
+                    <!-- Assigned Agent Card -->
+                    <div class="sidebar-card">
+                        <h3>Assigned Property Advisor</h3>
+                        <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 15px;">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200" alt="Amelia Brooks" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                            <div>
+                                <h4 style="font-size: 16px; margin-bottom: 2px;">Amelia Brooks</h4>
+                                <p style="font-size: 12px; color: var(--primary); font-weight: 600;">Senior Luxury Advisor</p>
+                                <p style="font-size: 12px; color: var(--text);">⭐ 4.9 (48 deals)</p>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 13px; color: var(--text); margin-bottom: 15px;">
+                            📞 +237 600 000 001<br>
+                            ✉️ amelia.brooks@havenhomes.com
+                        </p>
+
+                        <a href="contact.html?agent=Amelia+Brooks" class="agent-contact-btn" style="text-align: center;">
+                            Message Amelia Directly →
+                        </a>
+                    </div>
+
+                    <!-- Back to Catalog Link -->
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="properties.html" style="color: var(--primary); font-weight: 600; font-size: 14px;">
+                            ← Back to All Properties
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">H</span>
+                    Haven<span>Homes</span>
+                </a>
+                <p>
+                    Helping you discover beautiful homes and better
+                    property opportunities.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Our Services</h3>
+                <a href="buy.html">Buy Property</a>
+                <a href="rent.html">Rent Property</a>
+                <a href="sell.html">Sell Property</a>
+                <a href="agents.html">Our Agents</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>📍 Cameroon</p>
+                <p>📧 info@havenhomes.com</p>
+                <p>📞 +237 600 000 000</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 HavenHomes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

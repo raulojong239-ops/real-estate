@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxuryHomes | Find Your Dream Property</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="real.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">H</span>
+                Haven<span>Homes</span>
+            </a>
+
+            <input type="checkbox" id="menuToggle" class="menu-checkbox" hidden>
+            <label for="menuToggle" class="menu-toggle" aria-label="Open navigation">☰</label>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-link">Login</a>
+                <a href="sell.html" class="btn btn-primary">List Property</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content container">
+
+            <span class="hero-tag">WELCOME TO HAVENHOMES</span>
+
+            <h1>Find a Place Where<br>Life Feels Like <span>Home.</span></h1>
+
+            <p>
+                Discover beautiful homes, apartments and properties
+                that match your lifestyle and budget.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="properties.html" class="btn btn-primary">Explore Properties</a>
+                <a href="about.html" class="btn btn-outline">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROPERTY SEARCH SECTION -->
+    <section class="search-section container">
+
+        <div class="search-heading">
+            <h2>Find Your Perfect Property</h2>
+            <p>Search through our available properties.</p>
+        </div>
+
+        <form class="search-form" id="searchForm">
+
+            <div class="search-field">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Enter city or location">
+            </div>
+
+            <div class="search-field">
+                <label for="propertyType">Property Type</label>
+                <select id="propertyType">
+                    <option value="">All Types</option>
+                    <option value="House">House</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Land">Land</option>
+                </select>
+            </div>
+
+            <div class="search-field">
+                <label for="priceRange">Maximum Price</label>
+                <select id="priceRange">
+                    <option value="">Any Price</option>
+                    <option value="10000000">100,000,00CFA</option>
+                    <option value="20000000">200,000,00CFA</option>
+                    <option value="30000000">300,000,00CFA</option>
+                    <option value="50000000">500,000,00CFA</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary search-btn">
+                Search Properties
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FEATURED PROPERTIES -->
+    <section class="featured-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-tag">OUR COLLECTION</span>
+                    <h2>Featured Properties</h2>
+                    <p>Explore some of our handpicked properties.</p>
+                </div>
+
+                <a href="properties.html" class="view-all">View All Properties →</a>
+            </div>
+
+
+            <div class="property-grid" id="propertyGrid">
+
+                <!-- PROPERTY 1 -->
+                <article class="property-card"
+                    data-location="douala cameroon"
+                    data-type="House"
+                    data-price="250000">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900" alt="Modern luxury house">
+
+                        <span class="property-status">For Sale</span>
+
+                        <button class="favorite-btn" aria-label="Save property">♡</button>
+                    </div>
+
+                    <div class="property-info">
+
+                        <span class="property-type">Luxury House</span>
+
+                        <h3>Modern Family Residence</h3>
+
+                        <p class="property-location">📍 Bonanjo, Douala</p>
+
+                        <div class="property-features">
+                            <span>🛏 4 Beds</span>
+                            <span>🚿 3 Baths</span>
+                            <span>📐 250 m²</span>
+                        </div>
+
+                        <div class="property-bottom">
+                            <h3>$250,000</h3>
+                            <a href="property-details.html" class="details-link">View Details →</a>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- PROPERTY 2 -->
+                <article class="property-card"
+                    data-location="yaounde cameroon"
+                    data-type="Apartment"
+                    data-price="150000">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900" alt="Modern apartment">
+
+                        <span class="property-status rent-status">For Rent</span>
+
+                        <button class="favorite-btn" aria-label="Save property">♡</button>
+                    </div>
+
+                    <div class="property-info">
+
+                        <span class="property-type">Modern Apartment</span>
+
+                        <h3>Elegant City Apartment</h3>
+
+                        <p class="property-location">📍 Bastos, Yaoundé</p>
+
+                        <div class="property-features">
+                            <span>🛏 3 Beds</span>
+                            <span>🚿 2 Baths</span>
+                            <span>📐 180 m²</span>
+                        </div>
+
+                        <div class="property-bottom">
+                            <h3>$150,000</h3>
+                            <a href="property-details.html" class="details-link">View Details →</a>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- PROPERTY 3 -->
+                <article class="property-card"
+                    data-location="limbe cameroon"
+                    data-type="Villa"
+                    data-price="450000">
+
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900" alt="Luxury villa">
+
+                        <span class="property-status">For Sale</span>
+
+                        <button class="favorite-btn" aria-label="Save property">♡</button>
+                    </div>
+
+                    <div class="property-info">
+
+                        <span class="property-type">Luxury Villa</span>
+
+                        <h3>Beautiful Ocean View Villa</h3>
+
+                        <p class="property-location">📍 Mile 4, Limbe</p>
+
+                        <div class="property-features">
+                            <span>🛏 5 Beds</span>
+                            <span>🚿 4 Baths</span>
+                            <span>📐 400 m²</span>
+                        </div>
+
+                        <div class="property-bottom">
+                            <h3>$450,0000</h3>
+                            <a href="property-details.html" class="details-link">View Details →</a>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="noResults" class="no-results" hidden>No matching properties found. Try another search.</p>
+
+        </div>
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-section section-padding">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+                <div>
+                    <span class="section-tag">WHY HAVENHOMES</span>
+                    <h2>Why Choose Us?</h2>
+                    <p>We make finding your dream property simple and stress-free.</p>
+                </div>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🏡</div>
+                    <h3>Wide Property Selection</h3>
+                    <p>Explore different properties and find the one that suits your needs.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Trusted Agents</h3>
+                    <p>Work with experienced property agents who understand your needs.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Affordable Prices</h3>
+                    <p>Find quality properties that match your budget and expectations.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Secure Transactions</h3>
+                    <p>We prioritize transparency and confidence throughout your property search.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-padding">
+
+        <div class="container about-container">
+
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1000" alt="Beautiful modern home interior">
+                <div class="experience-box">
+                    <h2>10+</h2>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-tag">ABOUT OUR COMPANY</span>
+
+                <h2>Helping You Find a Place to Call Home</h2>
+
+                <p>
+                    At HavenHomes, we believe that finding the right property
+                    is more than just buying or renting a building.
+                    It is about discovering a place where memories are made.
+                </p>
+
+                <p>
+                    Our goal is to make property discovery easier by connecting
+                    people with homes and investment opportunities that fit
+                    their needs.
+                </p>
+
+                <a href="about.html" class="btn btn-primary">Discover More</a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+
+        <div class="container cta-content">
+
+            <div>
+                <span class="section-tag">READY TO GET STARTED?</span>
+                <h2>Have a Property to Sell?</h2>
+                <p>List your property and connect with potential buyers.</p>
+            </div>
+
+            <a href="sell.html" class="btn btn-light">List Your Property →</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section container">
+
+        <div>
+            <h2>Stay Updated With Us</h2>
+            <p>Subscribe to receive property news and updates.</p>
+        </div>
+
+        <form id="newsletterForm" class="newsletter-form">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">H</span>
+                    Haven<span>Homes</span>
+                </a>
+
+                <p>
+                    Helping you discover beautiful homes and better
+                    property opportunities.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Our Services</h3>
+                <a href="buy.html">Buy Property</a>
+                <a href="rent.html">Rent Property</a>
+                <a href="sell.html">Sell Property</a>
+                <a href="agents.html">Our Agents</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>📍 Cameroon</p>
+                <p>📧 raulojong239@gmail.com</p>
+                <p>📞 +237 678697062</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 HavenHomes. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

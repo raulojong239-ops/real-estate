@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | HavenHomes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="real.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">H</span>
+                Haven<span>Homes</span>
+            </a>
+
+            <input type="checkbox" id="menuToggle" class="menu-checkbox" hidden>
+            <label for="menuToggle" class="menu-toggle" aria-label="Open navigation">☰</label>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-link" style="color: var(--primary); font-weight: 700;">Login</a>
+                <a href="sell.html" class="btn btn-primary">List Property</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- AUTH WRAPPER -->
+    <main class="auth-wrapper">
+        <div class="auth-card">
+            <h2>Welcome Back</h2>
+            <p class="auth-sub">Sign in to access your saved homes, viewings, and alerts.</p>
+
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Signed in successfully! Redirecting...'); window.location.href='index.html';">
+
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <label for="loginPassword" style="margin-bottom: 0;">Password</label>
+                        <a href="#" onclick="alert('Password reset link sent to your email.'); return false;" style="font-size: 12px; color: var(--primary);">Forgot password?</a>
+                    </div>
+                    <input type="password" id="loginPassword" required placeholder="Enter your password">
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 13px; color: var(--text);">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe" style="margin-bottom: 0; font-weight: 400; cursor: pointer;">Remember me on this device</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In →</button>
+            </form>
+
+            <div class="auth-footer">
+                Don't have an account? <a href="register.html">Create an Account</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">H</span>
+                    Haven<span>Homes</span>
+                </a>
+                <p>
+                    Helping you discover beautiful homes and better
+                    property opportunities.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Our Services</h3>
+                <a href="buy.html">Buy Property</a>
+                <a href="rent.html">Rent Property</a>
+                <a href="sell.html">Sell Property</a>
+                <a href="agents.html">Our Agents</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>📍 Cameroon</p>
+                <p>📧 info@havenhomes.com</p>
+                <p>📞 +237 600 000 000</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 HavenHomes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

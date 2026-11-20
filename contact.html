@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | HavenHomes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="real.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">H</span>
+                Haven<span>Homes</span>
+            </a>
+
+            <input type="checkbox" id="menuToggle" class="menu-checkbox" hidden>
+            <label for="menuToggle" class="menu-toggle" aria-label="Open navigation">☰</label>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-link">Login</a>
+                <a href="sell.html" class="btn btn-primary">List Property</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact HavenHomes</h1>
+            <p>Have a question about a property, curious about selling, or want to schedule a viewing? We are here to help.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="contact-grid">
+
+                <!-- Left: Offices & Direct Info -->
+                <div class="contact-info-card">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 style="font-size: 24px; margin: 10px 0 16px;">Our Regional Offices</h2>
+                    <p style="font-size: 14px; color: var(--text); margin-bottom: 25px;">
+                        Visit one of our advisory branches or contact our customer support team directly.
+                    </p>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🏢</div>
+                        <div>
+                            <h4>Bamenda Flagship Office</h4>
+                            <p>Rue de la Motte Piquet, Bonanjo, Douala, Cameroon<br>
+                               <strong>Phone:</strong> +237 600 000 001<br>
+                               <strong>Hours:</strong> Mon - Sat: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🏛️</div>
+                        <div>
+                            <h4>Yaoundé Advisory Branch</h4>
+                            <p>Avenue Rosa Parks, Bastos, Yaoundé, Cameroon<br>
+                               <strong>Phone:</strong> +237 600 000 002<br>
+                               <strong>Hours:</strong> Mon - Fri: 8:30 AM - 5:30 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🌊</div>
+                        <div>
+                            <h4>Limbe Coastal Agency</h4>
+                            <p>Down Beach Road, Mile 4, Limbe, Cameroon<br>
+                               <strong>Phone:</strong> +237 600 000 003<br>
+                               <strong>Hours:</strong> Tue - Sun: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">✉️</div>
+                        <div>
+                            <h4>Email Inquiries</h4>
+                            <p>General: <strong>info@havenhomes.com</strong><br>
+                               Advisors: <strong>advisory@havenhomes.com</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="form-box">
+                    <h2 style="font-size: 22px; margin-bottom: 8px;">Send Us a Message</h2>
+                    <p style="font-size: 14px; color: var(--text); margin-bottom: 25px;">Leave your details and one of our local advisors will get back to you within 24 hours.</p>
+
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for contacting HavenHomes! We will respond shortly.'); this.reset();">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Your Name *</label>
+                                <input type="text" id="contactName" required placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" required placeholder="name@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" required placeholder="+237 600 000 000">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject / Inquiring About</label>
+                                <select id="contactSubject">
+                                    <option value="Viewing">Schedule a Property Viewing</option>
+                                    <option value="Buying">Buying a Property</option>
+                                    <option value="Renting">Renting an Apartment / House</option>
+                                    <option value="Selling">Listing / Selling a Property</option>
+                                    <option value="General">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" rows="5" required placeholder="Tell us about the property you are interested in or questions you have..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message →</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-icon">H</span>
+                    Haven<span>Homes</span>
+                </a>
+                <p>
+                    Helping you discover beautiful homes and better
+                    property opportunities.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="properties.html">Properties</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Our Services</h3>
+                <a href="buy.html">Buy Property</a>
+                <a href="rent.html">Rent Property</a>
+                <a href="sell.html">Sell Property</a>
+                <a href="agents.html">Our Agents</a>
+            </div>
+
+            <div>
+                <h3>Contact Us</h3>
+                <p>📍 Cameroon</p>
+                <p>📧 info@havenhomes.com</p>
+                <p>📞 +237 600 000 000</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 HavenHomes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
