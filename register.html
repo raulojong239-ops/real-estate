@@ -47,7 +47,7 @@
             <h2>Create Account</h2>
             <p class="auth-sub">Join HavenHomes to save listings, get price alerts, and request private viewings.</p>
 
-            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Account created successfully! Welcome to HavenHomes.'); window.location.href='login.html';">
+            <form action="#" method="POST" onsubmit="event.preventDefault(); showModal('success', 'Account Created!', 'Welcome to HavenHomes. Redirecting you to sign in...'); setTimeout(function(){ window.location.href='login.html'; }, 2000);">
 
                 <div class="form-group">
                     <label for="registerName">Full Name</label>
@@ -72,7 +72,7 @@
                 <div style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 20px; font-size: 13px; color: var(--text);">
                     <input type="checkbox" id="agreeTerms" required style="margin-top: 3px;">
                     <label for="agreeTerms" style="margin-bottom: 0; font-weight: 400; cursor: pointer;">
-                        I agree to the <a href="#" onclick="alert('HavenHomes Terms of Service'); return false;" style="color: var(--primary);">Terms of Service</a> and Privacy Policy.
+                        I agree to the <a href="#" onclick="showModal('info', 'Terms of Service', 'HavenHomes Terms of Service and Privacy Policy apply to all users of this platform.'); return false;" style="color: var(--primary);">Terms of Service</a> and Privacy Policy.
                     </label>
                 </div>
 
@@ -127,6 +127,37 @@
             <p>© 2026 HavenHomes. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <div class="modal-icon" id="modalIcon">✅</div>
+            <h3 id="modalTitle">Title</h3>
+            <p id="modalMessage">Message</p>
+            <div class="modal-actions">
+                <button class="btn btn-cancel" onclick="closeModal()">Close</button>
+                <button class="btn btn-primary" onclick="closeModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showModal(type, title, message) {
+            var icons = { success: '✅', info: 'ℹ️', error: '⚠️' };
+            document.getElementById('modalIcon').textContent = icons[type] || 'ℹ️';
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalMessage').textContent = message;
+            document.getElementById('modalOverlay').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+
+        document.getElementById('modalOverlay').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+    </script>
 
 </body>
 </html>
